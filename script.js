@@ -53,10 +53,9 @@ function createTaskElement(task){
 }
 function addTask(){
 	const taskTitle = taskInput.value;
-	let indicator = tasks.length + 1;
 	if(taskTitle.trim() !== ''){
 		const newTask = {
-			id: indicator,
+			id: Date.now(),
 			title: taskTitle,
 			done: false
 		}
@@ -84,7 +83,7 @@ addBtn.addEventListener('click', () => {
 });
 
 taskInput.addEventListener('keydown', (e) => {
-	if(e.code == "Enter"){
+	if(e.code === "Enter"){
 		addTask()
 	}
 })
