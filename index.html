@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TodoApp</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js" defer></script>
+	<link rel="icon" type="image/png" href="images/favicon.png"/>
+</head>
+<body class="todo_app">
+	<header class="todo_header">
+		<section class="header_section_icons">
+			<div class="conteiner_account">
+				<span class="account_icon"></span>
+				<p class="account_sign"></p>
+			</div>
+			<div class="container_notification_aside_icon">
+				<span class="notification_icon"></span>
+				<span class="aside_icon"></span>
+			</div>
+		</section>
+		<section class="section_logo_sign">
+			<h1 class="sign">TodoApp</h1>
+			<div class="container_logo">
+				<span class="logo"></span>	
+			</div>
+		</section>
+	</header>
+	<main class="todo_main">
+		<aside class="todo_aside">
+			<label for="task_title" class="heading_task_title">ADD TASK</label>
+			<input type="text" class="task_title" placeholder="Please enter the task title" id="task_title"/>
+			<button class="add_btn">ADD</button>
+		</aside>
+		<section class="section_list_of_tasks">
+			<ul class="list_of_tasks">
+			</ul>
+		</section>
+	</main>
+	<footer class="todo_footer"></footer>
+</body>
+</html>
